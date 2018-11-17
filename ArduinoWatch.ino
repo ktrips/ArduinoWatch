@@ -248,7 +248,7 @@ void loop() {
   afficheur.print("CAL:"); // display text
   afficheur.print(calorie); // display text
 
-  if (stepcount%100 == 0 && ifttt_flag == 0) {
+  if (stepcount%1000 == 0 && ifttt_flag == 0) {
     // IFTTTに投げるURIを定義します。
     String url = "/trigger/";
     url += event;
